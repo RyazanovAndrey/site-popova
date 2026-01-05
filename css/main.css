@@ -207,7 +207,48 @@ a {
 }
 
 .card-neon {
-  border: 1px solid #ffffff;
+  background: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 2px;
+  cursor: pointer;
+}
+.card-neon .card-neon-body {
+  position: relative;
+  background-color: #0b181e;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.card-neon .card-neon-body::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-80px);
+  background-color: #125a8c;
+  border-radius: 100%;
+  filter: blur(30px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.card-neon .card-neon-box {
+  background-color: rgba(11, 24, 30, 0.2);
+  backdrop-filter: blur(30px);
+  padding: 50px;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.card-neon:hover {
+  background: linear-gradient(130deg, #284c6c, #060f16, #244a4d);
+}
+
+.card-neon:hover .card-neon-body::before {
+  opacity: 1;
 }
 
 .header {
@@ -300,6 +341,21 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
+}
+.about .about-title {
+  font-size: 30px;
+}
+.about .about-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #1e99f7;
+  border-radius: 100px;
+}
+.about .icon-img {
+  width: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -40,5 +40,49 @@
 }
 
 .card-neon {
-    border: 1px solid #ffffff;
+    background: transparent;
+    border-radius: $br-width;
+    margin-bottom: 20px;
+    padding: 2px;
+    cursor: pointer;
+
+    .card-neon-body {
+        position: relative;
+        background-color: #0b181e;
+        border-radius: inherit;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 160px;
+            height: 160px;
+            bottom: -30%;
+            left: 50%;
+            transform: translateX(-80px);
+            background-color: #125a8c;
+            border-radius: 100%;
+            filter: blur(30px);
+            opacity: 0;
+            transition: .3s;
+        }
+    }
+
+    .card-neon-box {
+        background-color: rgba(11, 24, 30, 0.2);
+        backdrop-filter: blur(30px);
+        padding: 50px;
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+}
+
+.card-neon:hover {
+    background: $color-card-border-gradient;
+}
+
+.card-neon:hover .card-neon-body::before {
+    opacity: 1;
 }
