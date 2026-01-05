@@ -1,0 +1,15 @@
+{
+  "name": "daria-popova",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass scss:css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.97.1"
+  }
+}

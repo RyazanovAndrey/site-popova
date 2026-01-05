@@ -1,0 +1,43 @@
+@use './vars' as *;
+@use './mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: $color-bg;
+    color: $color-text-main;
+}
+
+a {
+    color: $color-text-main;
+}
+
+.container {
+    margin: 0 auto;
+    padding-inline: 15px;
+
+    @media (width < 576px) {
+        max-width: 90%;
+    }
+
+    @include adaptive(576px) {
+        max-width: 540px;
+    }
+
+    @include adaptive(768px) {
+        max-width: 720px;
+    }
+
+    @include adaptive(992px) {
+        max-width: 960px;
+    }
+
+    @include adaptive(1200px) {
+        max-width: 1140px;
+    }
+
+    @include adaptive(1400px) {
+        max-width: 1320px;
+    }
+}
