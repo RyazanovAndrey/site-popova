@@ -28,4 +28,33 @@
     & .icon-img {
         width: 50px;
     }
+
+    .icon-right-icon {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background: linear-gradient(45deg, #1ab4fe, #1be8fb);
+        border-radius: 100px;
+    }
+
+    .about-right-wrapper {
+        display: flex;
+        column-gap: 20px;
+        margin-top: 20px;
+    }
+
+    .card-right-box-wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-item1 {
+        @include cardStyle(50px, flex, center, 20px);
+    }
+
+    .card-item2{
+        @include cardStyle(30px, block, center, 20px);
+    }
 }

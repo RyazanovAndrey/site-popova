@@ -7,3 +7,10 @@
 @mixin paddingTopBottom($padding) {
     padding-block: $padding;
 }
+
+@mixin cardStyle($padding, $display: block, $ai, $gap) {
+    padding: $padding;
+    display: $display;
+    align-items: $ai;
+    column-gap: $gap;
+}

@@ -17,6 +17,21 @@ a {
     color: $color-text-main;
 }
 
+.section-desc {
+    text-transform: uppercase;
+    color: $color-primary;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-text {
+    margin-top: 20px;
+    color: $color-content;
+}
+
 .container {
     margin: 0 auto;
     padding-inline: 15px;

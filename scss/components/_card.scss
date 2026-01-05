@@ -1,5 +1,23 @@
 @use '../base/vars' as *;
 
+@property --color-start {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #060f16;
+}
+
+@property --color-center {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #060f16;
+}
+
+@property --color-end {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #060f16;
+}
+
 .card-static {
     background: $color-card-border-gradient;
     border-radius: $br-width;
@@ -40,7 +58,8 @@
 }
 
 .card-neon {
-    background: transparent;
+    background: linear-gradient(130deg, var(--color-start), var(--color-center), var(--color-end));
+    transition: --color-start .8s, --color-center .8s, --color-end .8s;
     border-radius: $br-width;
     margin-bottom: 20px;
     padding: 2px;
@@ -71,16 +90,14 @@
     .card-neon-box {
         background-color: rgba(11, 24, 30, 0.2);
         backdrop-filter: blur(30px);
-        padding: 50px;
-        border-radius: inherit;
-        display: flex;
-        align-items: center;
-        column-gap: 20px;
     }
 }
 
 .card-neon:hover {
-    background: $color-card-border-gradient;
+    --color-start: #284c6c;
+    --color-center: #060f16;
+    --color-end: #244a4d;
+
 }
 
 .card-neon:hover .card-neon-body::before {
