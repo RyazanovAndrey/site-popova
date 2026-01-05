@@ -3,3 +3,7 @@
         @content
     }
 }
+
+@mixin paddingTopBottom($padding) {
+    padding-block: $padding;
+}

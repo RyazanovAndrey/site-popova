@@ -1,0 +1,44 @@
+@use '../base/vars' as *;
+
+.card-static {
+    background: $color-card-border-gradient;
+    border-radius: $br-width;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 2px;
+
+    p {
+        font-size: 50px;
+    }
+
+    .card-static-body {
+        position: relative;
+        background-color: #0b181e;
+        border-radius: inherit;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 160px;
+            height: 160px;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-80px);
+            background-color: #125a8c;
+            border-radius: 100%;
+            filter: blur(30px);
+        }
+    }
+
+    .card-static-box {
+        background-color: rgba(11, 24, 30, 0.2);
+        backdrop-filter: blur(30px);
+        padding: 50px;
+        border-radius: inherit;
+    }
+}
+
+.card-neon {
+    border: 1px solid #ffffff;
+}

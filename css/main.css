@@ -99,6 +99,10 @@ legend {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #060f16;
@@ -165,6 +169,45 @@ a {
 .btn:hover {
   border: 1px solid #1e99f7;
   background: linear-gradient(45deg, rgba(30, 153, 247, 0.3), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(30, 153, 247, 0.3));
+}
+
+.card-static {
+  background: linear-gradient(130deg, #284c6c, #060f16, #244a4d);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 2px;
+}
+.card-static p {
+  font-size: 50px;
+}
+.card-static .card-static-body {
+  position: relative;
+  background-color: #0b181e;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.card-static .card-static-body::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-80px);
+  background-color: #125a8c;
+  border-radius: 100%;
+  filter: blur(30px);
+}
+.card-static .card-static-box {
+  background-color: rgba(11, 24, 30, 0.2);
+  backdrop-filter: blur(30px);
+  padding: 50px;
+  border-radius: inherit;
+}
+
+.card-neon {
+  border: 1px solid #ffffff;
 }
 
 .header {
@@ -245,9 +288,18 @@ a {
   color: #1e99f7;
 }
 .home #element {
-  background: linear-gradient(45deg, #17A4FC, #16E7FE);
+  background: linear-gradient(130deg, #17A4FC, #16E7FE);
   background-clip: text;
   color: transparent;
+}
+
+.about {
+  padding-block: 100px;
+}
+.about .about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
