@@ -1,10 +1,40 @@
+@use '../base/vars' as *;
+
 .home {
-    background: url('../../images/Hero.jpg');
+    background:
+        linear-gradient(90deg, #060f16, rgba(6, 15, 22, 0.2), #060f16),
+        url('../../images/Hero.jpg');
     background-position: center;
     background-size: cover;
-    min-height: 800px;
+    min-height: 650px;
 
     .home-wrapper {
-        border: 1px solid #eb1313;
+        padding-top: 15%;
+        max-width: 600px;
+
+        p {
+            color: $color-content;
+            margin-block: 20px;
+        }
+    }
+
+    .home-desc {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .home-title {
+        font-size: clamp(20px, 2.6vw, 50px);
+        font-weight: 600;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    #element {
+        background: $color-text-gradient;
+        background-clip: text;
+        color: transparent;
     }
 }

@@ -144,6 +144,29 @@ a {
   }
 }
 
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 30px;
+  border-radius: 100px;
+  column-gap: 10px;
+  display: inline-block;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.3));
+  transition: 0.3s;
+}
+.btn .ri-arrow-right-line {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.btn:hover .ri-arrow-right-line {
+  left: 5px;
+}
+.btn:hover {
+  border: 1px solid #1e99f7;
+  background: linear-gradient(45deg, rgba(30, 153, 247, 0.3), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(30, 153, 247, 0.3));
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -190,16 +213,41 @@ a {
   height: 40px;
   background-color: rgba(14, 35, 51, 0.7);
   border-radius: 100px;
+  transition: 0.3s;
+}
+.header .social-link:hover {
+  background-color: #1e99f7;
 }
 
 .home {
-  background: url("../../images/Hero.jpg");
+  background: linear-gradient(90deg, #060f16, rgba(6, 15, 22, 0.2), #060f16), url("../../images/Hero.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 800px;
+  min-height: 650px;
 }
 .home .home-wrapper {
-  border: 1px solid #eb1313;
+  padding-top: 15%;
+  max-width: 600px;
+}
+.home .home-wrapper p {
+  color: #818181;
+  margin-block: 20px;
+}
+.home .home-desc {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.home .home-title {
+  font-size: clamp(20px, 2.6vw, 50px);
+  font-weight: 600;
+}
+.home .home-title span {
+  color: #1e99f7;
+}
+.home #element {
+  background: linear-gradient(45deg, #17A4FC, #16E7FE);
+  background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */

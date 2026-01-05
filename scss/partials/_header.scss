@@ -56,5 +56,10 @@
         height: 40px;
         background-color: rgba(14, 35, 51, 0.7);
         border-radius: 100px;
+        transition: .3s;
+
+        &:hover {
+            background-color: $color-primary;
+        }
     }
 }
