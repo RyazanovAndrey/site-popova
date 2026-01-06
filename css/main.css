@@ -103,6 +103,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #060f16;
@@ -309,7 +313,7 @@ a {
   content: "";
   width: 160px;
   height: 160px;
-  bottom: -30%;
+  bottom: -80px;
   left: 50%;
   transform: translateX(-80px);
   background-color: #125a8c;
@@ -480,14 +484,67 @@ a {
   align-items: center;
   column-gap: 40px;
 }
-.service .card-item3 {
+.service .card-item1 {
   padding: 20px;
   display: block;
   align-items: start;
   column-gap: 0;
 }
-.service .card-item3 span {
+.service .card-item1 span {
   font-size: 20px;
+}
+
+.portfolio {
+  padding-block: 100px;
+}
+.portfolio .portfolio-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.portfolio .portfolio-tabs {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+}
+.portfolio .portfolio-tab {
+  padding: 15px;
+  background-color: #0b1c29;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.portfolio .portfolio-tab.active {
+  background-color: #01090f;
+  color: #1e99f7;
+}
+.portfolio .portfolio-tab:hover {
+  color: #1e99f7;
+}
+.portfolio .portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+.portfolio .card-item1 {
+  padding: 20px;
+  display: block;
+  align-items: srart;
+  column-gap: 0;
+}
+.portfolio .portfolio-card-title {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.portfolio .portfolio-card-cat {
+  display: flex;
+  column-gap: 10px;
+  margin-block: 20px;
+}
+.portfolio .portfolio-card-cat li {
+  padding: 10px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

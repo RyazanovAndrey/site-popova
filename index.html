@@ -11,13 +11,13 @@
 
 <body>
 
-    <div class="line-wrapper">
+    <div class="line-wrapper" style="display: none;">
         <div class="line">1</div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
 
-    <header class="header">
+    <header class="header hidden">
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">Daria <span>Popova</span></div>
@@ -40,7 +40,7 @@
     </header>
 
     <main>
-        <section class="home">
+        <section class="home hidden">
             <div class="container">
                 <div class="home-wrapper">
                     <div class="home-desc">Hello</div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <section class="about" id="about">
+        <section class="about hidden" id="about">
             <div class="container">
                 <div class="about-wrapper">
                     <div class="about-left">
@@ -116,36 +116,43 @@
                 </div>
             </div>
         </section>
-        <section class="service" id="service">
+        <section class="service hidden" id="service">
             <div class="container">
                 <div class="service-box">
                     <div class="section-desc">Latest Service</div>
                     <h3 class="section-title">Inspiring the world one Project</h3>
-                    <p class="section-text">Business consulting consultants provide expert advice and guida business to help them improve their performance, efficiency, and organizational</p>
+                    <p class="section-text">Business consulting consultants provide expert advice and guida business to
+                        help them improve their performance, efficiency, and organizational</p>
                 </div>
                 <div class="service-wrapper">
                     <div class="service-left">
                         <div class="card-neon">
                             <div class="card-neon-body">
-                                <div class="card-neon-box card-item3">
+                                <div class="card-neon-box card-item1">
                                     <span>01. A porfolio of creativity</span>
-                                    <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quisquam dolor suscipit unde dolorum beatae vel commodi ullam nostrum molestiae.</p>
+                                    <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Nam quisquam dolor suscipit unde dolorum beatae vel commodi ullam nostrum
+                                        molestiae.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-neon">
                             <div class="card-neon-body">
-                                <div class="card-neon-box card-item3">
+                                <div class="card-neon-box card-item1">
                                     <span>02. My portfolio of innovation</span>
-                                    <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quisquam dolor suscipit unde dolorum beatae vel commodi ullam nostrum molestiae.</p>
+                                    <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Nam quisquam dolor suscipit unde dolorum beatae vel commodi ullam nostrum
+                                        molestiae.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-neon">
                             <div class="card-neon-body">
-                                <div class="card-neon-box card-item3">
+                                <div class="card-neon-box card-item1">
                                     <span>03. A showcase of my projects</span>
-                                    <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quisquam dolor suscipit unde dolorum beatae vel commodi ullam nostrum molestiae.</p>
+                                    <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Nam quisquam dolor suscipit unde dolorum beatae vel commodi ullam nostrum
+                                        molestiae.</p>
                                 </div>
                             </div>
                         </div>
@@ -154,8 +161,106 @@
                         <div class="card-neon">
                             <div class="card-neon-body">
                                 <div class="card-neon-box card-item3">
-                                  <img src="/images/services.webp" alt="">
+                                    <img src="/images/services.webp" alt="">
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-box">
+                    <div class="section-desc">Latest Portfolio</div>
+                    <h3 class="section-title">Transforming Ideas into Exceptional</h3>
+                    <p class="section-text">Business consulting consultants provide expert advice and guida business
+                        to
+                        help them improve their performance, efficiency, and organizational</p>
+                </div>
+                <ul class="portfolio-tabs">
+                    <li class="portfolio-tab active" data-tab="all">All</li>
+                    <li class="portfolio-tab" data-tab="ai">Ai</li>
+                    <li class="portfolio-tab" data-tab="webflow">Webflow</li>
+                    <li class="portfolio-tab" data-tab="adobe">Adobe</li>
+                    <li class="portfolio-tab" data-tab="javascript">JavaScript</li>
+                </ul>
+                <div class="portfolio-wrapper">
+                    <div class="card-neon card-tab" data-tab="ai">
+                        <div class="card-neon-body">
+                            <div class="card-neon-box card-item1">
+                                <img src="/images/portfolio-1.webp" alt="">
+                                <p class="portfolio-card-title">Sass Website Design</p>
+                                <ul class="portfolio-card-cat">
+                                    <li>Adobe</li>
+                                    <li>Ai</li>
+                                </ul>
+                                <a href="#" class="btn">View portfolio <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-neon card-tab" data-tab="webflow">
+                        <div class="card-neon-body">
+                            <div class="card-neon-box card-item1">
+                                <img src="/images/portfolio-2.webp" alt="">
+                                <p class="portfolio-card-title">Sass Website Design</p>
+                                <ul class="portfolio-card-cat">
+                                    <li>Adobe</li>
+                                    <li>Ai</li>
+                                </ul>
+                                <a href="#" class="btn">View portfolio <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-neon card-tab" data-tab="ai">
+                        <div class="card-neon-body">
+                            <div class="card-neon-box card-item1">
+                                <img src="/images/portfolio-3.webp" alt="">
+                                <p class="portfolio-card-title">Sass Website Design</p>
+                                <ul class="portfolio-card-cat">
+                                    <li>Adobe</li>
+                                    <li>Ai</li>
+                                </ul>
+                                <a href="#" class="btn">View portfolio <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-neon card-tab" data-tab="adobe">
+                        <div class="card-neon-body">
+                            <div class="card-neon-box card-item1">
+                                <img src="/images/portfolio-4.webp" alt="">
+                                <p class="portfolio-card-title">Sass Website Design</p>
+                                <ul class="portfolio-card-cat">
+                                    <li>Adobe</li>
+                                    <li>Ai</li>
+                                </ul>
+                                <a href="#" class="btn">View portfolio <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-neon card-tab" data-tab="webflow">
+                        <div class="card-neon-body">
+                            <div class="card-neon-box card-item1">
+                                <img src="/images/portfolio-1.webp" alt="">
+                                <p class="portfolio-card-title">Sass Website Design</p>
+                                <ul class="portfolio-card-cat">
+                                    <li>Adobe</li>
+                                    <li>Ai</li>
+                                </ul>
+                                <a href="#" class="btn">View portfolio <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-neon card-tab" data-tab="javascript">
+                        <div class="card-neon-body">
+                            <div class="card-neon-box card-item1">
+                                <img src="/images/portfolio-1.webp" alt="">
+                                <p class="portfolio-card-title">Sass Website Design</p>
+                                <ul class="portfolio-card-cat">
+                                    <li>Adobe</li>
+                                    <li>Ai</li>
+                                </ul>
+                                <a href="#" class="btn">View portfolio <i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                     </div>
