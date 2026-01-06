@@ -547,4 +547,34 @@ a {
   border-radius: 50px;
 }
 
+.education {
+  padding-block: 100px;
+}
+.education .education-box {
+  text-align: center;
+}
+.education .education-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+.education .education-card-title {
+  font-size: 20px;
+  color: #818181;
+}
+.education .education-card-text {
+  color: #818181;
+  font-size: 14px;
+}
+.education .education-card-year {
+  margin-block: 10px 20px;
+}
+.education .card-item1 {
+  padding: 20px;
+  display: block;
+  align-items: start;
+  column-gap: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
