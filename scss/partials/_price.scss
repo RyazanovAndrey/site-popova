@@ -1,0 +1,35 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.price {
+
+    @include paddingTopBottom(50px);
+
+    .price-box {
+        text-align: center;
+    }
+
+    .price-tabs {
+        display: flex;
+        column-gap: 8px;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .price-tab {
+        padding: 15px;
+        background-color: #0b1c29;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: .5s;
+
+        &.active {
+            background-color: #01090f;
+            color: $color-primary;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

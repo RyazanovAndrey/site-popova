@@ -298,7 +298,6 @@ a {
   background: linear-gradient(130deg, var(--color-start), var(--color-center), var(--color-end));
   transition: --color-start 0.8s, --color-center 0.8s, --color-end 0.8s;
   border-radius: 10px;
-  margin-bottom: 20px;
   padding: 2px;
   cursor: pointer;
 }
@@ -575,6 +574,33 @@ a {
   display: block;
   align-items: start;
   column-gap: 0;
+}
+
+.price {
+  padding-block: 50px;
+}
+.price .price-box {
+  text-align: center;
+}
+.price .price-tabs {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.price .price-tab {
+  padding: 15px;
+  background-color: #0b1c29;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.price .price-tab.active {
+  background-color: #01090f;
+  color: #1e99f7;
+}
+.price .price-tab:hover {
+  color: #1e99f7;
 }
 
 /*# sourceMappingURL=main.css.map */
