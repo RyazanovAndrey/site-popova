@@ -16,7 +16,7 @@
     }
 
     .card-item3 {
-        @include cardStyle(20px, block, start, 0, );
+        @include cardStyle(20px, block, start, 0);
 
         span {
             font-size: 20px;
