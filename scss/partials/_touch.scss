@@ -1,0 +1,54 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.touch {
+    @include paddingTopBottom(30px);
+
+    .card-item1 {
+        @include cardStyle(20px, block, start, 0);
+    }
+
+    .touch-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .touch-form-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .touch-form-input {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        input {
+            width: 100%;
+            border: 1px solid $color-content;
+            height: 40px;
+            padding-left: 10px;
+            outline: 0;
+            border-radius: 5px;
+        }
+    }
+
+    .touch-form-text {
+        border: 1px solid $color-content;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+        outline: 0;
+        padding: 10px;
+    }
+
+    .touch-btn {
+        width: 100%;
+        background-color: $color-primary;
+        border-radius: 5px;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
