@@ -1,4 +1,5 @@
 @use '../base/vars' as *;
+@use '../base/mixins' as *;
 
 .header {
     position: absolute;
@@ -21,8 +22,12 @@
     }
 
     .menu {
-        display: flex;
+        display: none;
         gap: 40px;
+
+        @include adaptive(768px) {
+            display: flex;
+        }
     }
 
     .logo {

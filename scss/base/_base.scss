@@ -109,6 +109,14 @@ a {
     bottom: 20px;
 }
 
+.mobile-menu {
+    display: block;
+
+    @include adaptive(992px) {
+        display: none;
+    }
+}
+
 .container {
     margin: 0 auto;
     padding-inline: 15px;

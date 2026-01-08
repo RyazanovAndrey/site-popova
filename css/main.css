@@ -218,6 +218,15 @@ a {
   bottom: 20px;
 }
 
+.mobile-menu {
+  display: block;
+}
+@media (width > 992px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding-inline: 15px;
@@ -430,10 +439,15 @@ a {
           align-items: center;
 }
 .header .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   gap: 40px;
+}
+@media (width > 768px) {
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .header .logo {
   font-size: 30px;
