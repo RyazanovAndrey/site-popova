@@ -212,6 +212,12 @@ a {
   color: #818181;
 }
 
+.btn-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
 .container {
   margin: 0 auto;
   padding-inline: 15px;
@@ -404,6 +410,14 @@ a {
   top: 0;
   left: 0;
   padding-block: 15px;
+  z-index: 99;
+  background-color: #060f16;
+}
+.header.show-menu {
+  position: fixed;
+  backdrop-filter: blur(20px);
+  -webkit-animation: 0.5s showMenu linear;
+          animation: 0.5s showMenu linear;
 }
 .header .header-wrapper {
   display: -webkit-box;
@@ -468,6 +482,27 @@ a {
   background-color: #1e99f7;
 }
 
+@-webkit-keyframes showMenu {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes showMenu {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
 .home {
   background: -webkit-gradient(linear, left top, right top, from(#060f16), color-stop(rgba(6, 15, 22, 0.2)), to(#060f16)), url("../../images/Hero.jpg");
   background: linear-gradient(90deg, #060f16, rgba(6, 15, 22, 0.2), #060f16), url("../../images/Hero.jpg");

@@ -5,6 +5,20 @@ const typed = new Typed('#element', {
     loop: true
 });
 
+// Menu scroll
+
+const header = document.querySelector('.header')
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY
+    
+    if(currentScroll >= 300) {
+        header.classList.add('show-menu')
+    } else {
+        header.classList.remove('show-menu')
+    }
+})
+
 // Latest Portfolio
 const portfolioTabs = document.querySelector('.portfolio-tabs')
 const tabs = document.querySelectorAll('.portfolio-tab')
