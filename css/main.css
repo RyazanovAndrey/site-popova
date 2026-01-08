@@ -284,13 +284,13 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px 30px;
   border-radius: 100px;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
   display: inline-block;
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.3));
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.btn span {
+  margin-right: 10px;
 }
 .btn .ri-arrow-right-line {
   position: relative;
@@ -411,13 +411,12 @@ a {
   left: 0;
   padding-block: 15px;
   z-index: 99;
-  background-color: #060f16;
 }
 .header.show-menu {
   position: fixed;
-  backdrop-filter: blur(20px);
   -webkit-animation: 0.5s showMenu linear;
           animation: 0.5s showMenu linear;
+  backdrop-filter: blur(20px);
 }
 .header .header-wrapper {
   display: -webkit-box;
@@ -434,7 +433,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 .header .logo {
   font-size: 30px;
@@ -446,10 +445,8 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.header .link.active {
-  background-color: rgba(14, 35, 51, 0.7);
+.header .link.active-link {
   color: #1e99f7;
-  padding: 12px;
   border-radius: 5px;
 }
 .header .link:hover {
@@ -581,7 +578,7 @@ a {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
-  margin-top: 20px;
+  margin-block: 20px;
 }
 .about .card-right-box-wrapper {
   display: -webkit-box;

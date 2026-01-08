@@ -8,16 +8,32 @@ const typed = new Typed('#element', {
 // Menu scroll
 
 const header = document.querySelector('.header')
+const section = document.querySelectorAll('section')
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY
-    
-    if(currentScroll >= 300) {
+    showMenu(currentScroll)
+    activeLink(currentScroll)
+})
+
+function showMenu(currentScroll) {
+    if (currentScroll >= 300) {
         header.classList.add('show-menu')
     } else {
         header.classList.remove('show-menu')
     }
-})
+}
+
+function activeLink(currentScroll) {
+    section.forEach(item => {
+        if(currentScroll >= item.offsetTop) {
+            document.querySelector('.active-link').classList.remove('active-link')
+            const getAttr = item.getAttribute('id')
+
+            document.querySelector(`[href="#${getAttr}"]`).classList.add('active-link')
+        }
+    })
+}
 
 // Latest Portfolio
 const portfolioTabs = document.querySelector('.portfolio-tabs')

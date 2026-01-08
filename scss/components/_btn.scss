@@ -4,11 +4,14 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 15px 30px;
     border-radius: 100px;
-    column-gap: 10px;
     display: inline-block;
     background: 
     linear-gradient(45deg, rgba(255,255,255, 0.3), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255,255,255,0.3));
     transition: .3s;
+
+    span {
+        margin-right: 10px;
+    }
 
     .ri-arrow-right-line {
         position: relative;
