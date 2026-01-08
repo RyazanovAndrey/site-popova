@@ -1,0 +1,45 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.blog {
+
+    @include paddingTopBottom(100px);
+
+    .blog-box {
+        text-align: center;
+    }
+
+    .blog-slider {
+        margin-top: 40px;
+    }
+
+    .swiper {
+        overflow: hidden;
+    }
+
+    .swiper-wrapper {
+        display: inline-flex;
+    }
+
+    .slider-content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: $color-content;
+    }
+
+    .slider-content {
+        padding: 20px;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+
+        .btn {
+            margin-top: auto;
+        }
+    }
+
+    .slider-content-title {
+        font-size: 20px;
+        margin-block: 20px;
+    }
+}

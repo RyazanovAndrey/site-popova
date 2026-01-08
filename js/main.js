@@ -34,7 +34,7 @@ portfolioTabs.addEventListener('click', (event) => {
 // Price plan
 
 const priceTabs = document.querySelector('.price-tabs')
-const priceTab = document.querySelectorAll('.price-tab ') 
+const priceTab = document.querySelectorAll('.price-tab ')
 
 priceTabs.addEventListener('click', (event) => {
     const currentClick = event.target
@@ -43,7 +43,34 @@ priceTabs.addEventListener('click', (event) => {
     currentClick.classList.add('active')
 
     const dataTab = event.target.dataset.tab
-    
+
     document.querySelectorAll('.price-monthly').forEach(item => item.classList.add('hidden'))
     document.querySelector(`#${dataTab}`).classList.remove('hidden')
+})
+
+// Swiper JS
+
+const swiperBlog = new Swiper('.blog .swiper', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    grabCursor: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        }
+    }
 })

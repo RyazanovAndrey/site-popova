@@ -762,4 +762,49 @@ a {
 }
 .price .price-title, .price .price-month {
   font-size: 18px;
+}
+
+.blog {
+  padding-block: 100px;
+}
+.blog .blog-box {
+  text-align: center;
+}
+.blog .blog-slider {
+  margin-top: 40px;
+}
+.blog .swiper {
+  overflow: hidden;
+}
+.blog .swiper-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.blog .slider-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #818181;
+}
+.blog .slider-content {
+  padding: 20px;
+  min-height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog .slider-content .btn {
+  margin-top: auto;
+}
+.blog .slider-content-title {
+  font-size: 20px;
+  margin-block: 20px;
 }/*# sourceMappingURL=main.css.map */
