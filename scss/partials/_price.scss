@@ -32,4 +32,52 @@
             color: $color-primary;
         }
     }
+
+    .price-monthly {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+        gap: 30px;
+        align-items: center;
+
+        &.hidden {
+            display: none;
+        }
+
+        & .card-neon:nth-child(2) {
+            scale: 1.1
+        }
+    }
+
+    .card-item1 {
+        @include cardStyle(20px, block, start, 0);
+
+    }
+
+    .price-title, .price-month, .price-list-items {
+        color: $color-content;
+    }
+
+    .price-count {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .price-month {
+        border-bottom: 1px solid #3a3a3a;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .price-list-items {
+        margin-bottom: 20px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .price-title, .price-month {
+        font-size: 18px;
+    }
 }
