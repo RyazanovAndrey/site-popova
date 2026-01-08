@@ -26,7 +26,7 @@ function showMenu(currentScroll) {
 
 function activeLink(currentScroll) {
     section.forEach(item => {
-        if(currentScroll >= item.offsetTop) {
+        if (currentScroll >= item.offsetTop) {
             document.querySelector('.active-link').classList.remove('active-link')
             const getAttr = item.getAttribute('id')
 
@@ -34,6 +34,18 @@ function activeLink(currentScroll) {
         }
     })
 }
+
+// Mobile menu
+
+const mobileMenu = document.querySelector('.mobile-menu ')
+const mobileMenuNav = document.querySelector('.mobile-menu-nav')
+
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open')
+    document.body.classList.toggle('stop-scroll')
+    mobileMenuNav.classList.toggle('open')
+})
+
 
 // Latest Portfolio
 const portfolioTabs = document.querySelector('.portfolio-tabs')
@@ -91,16 +103,20 @@ const swiperBlog = new Swiper('.blog .swiper', {
     },
     breakpoints: {
         320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        576: {
             slidesPerView: 2,
             spaceBetween: 20
         },
-        480: {
+        992: {
             slidesPerView: 3,
             spaceBetween: 20
         },
-        640: {
+        1200: {
             slidesPerView: 4,
             spaceBetween: 20
-        }
+        },
     }
 })

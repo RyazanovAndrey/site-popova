@@ -27,7 +27,7 @@ a {
 }
 
 .section-title {
-    font-size: 30px;
+    font-size: clamp(30px, 2.6vw, 50px);
     font-weight: 700;
 }
 
@@ -95,10 +95,10 @@ a {
         justify-content: center;
     }
 
-    .card-info-content  {
+    .card-info-content {
 
         span {
-           color: $color-content; 
+            color: $color-content;
         }
     }
 }
@@ -110,11 +110,49 @@ a {
 }
 
 .mobile-menu {
-    display: block;
+    display: flex;
+    margin-left: 10px;
+
+    .mobile-icon:nth-child(2) {
+        display: none;
+    }
 
     @include adaptive(992px) {
         display: none;
     }
+
+    &.open .mobile-icon:nth-child(1) {
+        display: none;
+    }
+
+    &.open .mobile-icon:nth-child(2) {
+        display: block;
+    }
+}
+
+.mobile-menu-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $color-primary;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    & .link {
+        display: block;
+        padding: 20px;
+    }
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.stop-scroll {
+    overflow: hidden;
 }
 
 .container {

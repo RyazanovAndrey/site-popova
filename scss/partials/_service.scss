@@ -10,9 +10,17 @@
 
     .service-wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
-        column-gap: 40px;
+        gap: 40px;
+
+        @include adaptive(992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .service-left *{
+        margin-bottom: 5px;
     }
 
     .card-item1 {
