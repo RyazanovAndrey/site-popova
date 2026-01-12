@@ -7,16 +7,16 @@ const typed = new Typed('#element', {
 
 // ScrollReveal
 
-const animation = ScrollReveal({
+const animation = {
     origin: 'bottom',
     distance: '10px',
     duration: 800,
     delay: 200,
     reset: true,
     easing: 'ease-out'
-})
+}
 
-animation.reveal('.home-desc, .home-title, .home-wrapper p, .btn, .card-static, .card-neon, .section-desc, .section-title, .section-text', { interval: 200 })
+// animation.reveal('', {... animation, interval: 200 })
 
 // Menu scroll
 
