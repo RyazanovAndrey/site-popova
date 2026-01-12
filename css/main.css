@@ -216,6 +216,7 @@ a {
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 99;
 }
 
 .mobile-menu {
@@ -232,10 +233,10 @@ a {
     display: none;
   }
 }
-.mobile-menu.open .mobile-icon:nth-child(1) {
+.mobile-menu.open-mobile .mobile-icon:nth-child(1) {
   display: none;
 }
-.mobile-menu.open .mobile-icon:nth-child(2) {
+.mobile-menu.open-mobile .mobile-icon:nth-child(2) {
   display: block;
 }
 
@@ -244,17 +245,17 @@ a {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #1e99f7;
+  background-color: #060f16;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.mobile-menu-nav .link {
+.mobile-menu-nav .mobile-link {
   display: block;
   padding: 20px;
 }
-.mobile-menu-nav.open {
+.mobile-menu-nav.open-mobile {
   opacity: 1;
   visibility: visible;
 }

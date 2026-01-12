@@ -50,13 +50,24 @@ function activeLink(currentScroll) {
 
 // Mobile menu
 
-const mobileMenu = document.querySelector('.mobile-menu ')
+const mobileMenu = document.querySelector('.mobile-menu')
 const mobileMenuNav = document.querySelector('.mobile-menu-nav')
+const mobileLink = document.querySelectorAll('.mobile-link')
 
 mobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open')
-    document.body.classList.toggle('stop-scroll')
-    mobileMenuNav.classList.toggle('open')
+
+    mobileMenuNav.classList.toggle('open-mobile')
+    mobileMenu.classList.toggle('open-mobile')
+
+})
+
+mobileLink.forEach(item => {
+    item.addEventListener('click', () => {
+        if (mobileMenuNav.classList.contains('open-mobile')) {
+            mobileMenuNav.classList.remove('open-mobile')
+            mobileMenu.classList.remove('open-mobile')
+        }
+    })
 })
 
 
